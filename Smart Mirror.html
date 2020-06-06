@@ -1,0 +1,201 @@
+<! doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="guess.png">  <!-- image in title bar -->
+<title> SMART-MIRROR </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link  rel ="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Social media icons -->
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="div.css">
+<head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light ficed-top">
+<div class="container">
+  <a class="navbar-brand" href="#"><span style =" font-size: 30px" >SMART-MIRROR</a> </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="control.html">Control</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="store.html">Store</a>
+      </li>
+	 
+	  <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About US</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+	
+
+  
+    </form>
+  </div>
+</nav>
+    <style>p {
+        font: 20;
+  text-indent: 10px;
+}</style>
+    <h4><i><b>>What is a Smart Mirror?</i></b></h4>
+    <p>The smart mirror improves quality of life, by providing information to the users in the most convenient way possible every day. The goal of the mirror is to provide information in the morning while people are getting ready for the day or at night before going to bed. This will save users time every day and help to ensure they are aware about important details in their day. A user will be able to view time of the day, peek at the weather forecast, and not to mention, check their calendar for any upcoming events. The main aim of this project is to develop a smart mirror which will show the person(s) in front of it like a regular mirror in addition to many features. The Smart Mirror will help in developing smart houses with embedded artificial intelligence.</p>
+    
+    <h4><i><b>>What softwares were used?</b></i></h4>
+    <ul style="list-style-type:disc;">
+  <li>MagicMirror Software</li>
+    <img src="magicmirror.PNG" alt="Trulli" width="500" height="333" ><p>It's an open source modular smart mirror platform that can be downloaded using only a single command.</p> <a href="https://magicmirror.builders/">Click here to visit their website</a>
+  <li>Opencv</li>
+    <img src="opencv.png" alt="Trulli" width="500" height="333" ><p>OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.</p><a href="https://opencv.org/">Click here to visit their website</a>
+    
+</ul>  
+
+    <p1><i><b>>What are the components used?</b></i></p1>
+<ul style="list-style-type:disc;">
+  <li>Raspberry Pi 3 Model B+</li>
+    <img src="SC14013-40.jpg" alt="Trulli" width="500" height="333" ><p>This is the backbone of our project and it is used to fulfill all computational requests. But RPi lacks a hard drive and operating system. So, we used a microSD card in order to install Raspbian using OS image and all the software related code for the magic mirror.</p>
+   
+  <li>2-way mirror</li>
+    <img src="71PnpDBQ7ZL._AC_SY741_.jpg" alt="Trulli" width="500" height="333" > <p>This is the part of the mirror that is responsible for creating the futuristic effect. According to Wikipedia: “A one¬way mirror, sometimes called two¬way mirror, is a mirror that is partially reflective and partially transparent. When one side of the mirror is brightly lit and the other is dark, it allows viewing from the darkened side but not vice versa (Loy, 1999).” In this project, it is placed in front of the monitor, so that the black elements that are displayed on the screen will be seen as a reflection and the light elements will be seen normally. So if there is white text over a black background the white text will be seen as an overlay with the user reflected in the background.</p>
+   
+  <li>Monitor</li>
+    <img src="download.jfif" alt="Trulli" width="500" height="333"> <p>For the display a 24 inch LG monitor was bought. The monitor is much smaller than the mirror. An HDMI cable was used to connect the display screen to the Raspberry Pi for video output. It is used to display all the necessary information which are useful for the user.</p>
+
+  <li>USB Microphone</li>
+    <img src="14461760190_1.jpg" alt="Trulli" width="500" height="333" > <p>Since Raspberry Pi does not have a regular microphone input, we used USB microphone. It is a cheap simple which is connected through a USB sound card to the Pi. It is used for google assistant module.</p>
+  <li>Raspberry Pi Camera Module v2</li>
+    <img src="14028-01a.jpg" alt="Trulli" width="500" height="333" ><p>It is used as a webcam which is placed behind the mirror and used to recognize the user standing in front of the mirror. </p>
+  <li>Speaker</li>
+    <img src="418UrKW1tbL._SL500_AC_SS350_.jpg" alt="Trulli" width="500" height="333" ><p>It is a simple 3.5mm jack speaker which we used for the speech output of the google assistant.</p>
+  <li>Mirror Frame</li>
+    <img src="0_SQTDLUiETT2ZHRMS.jpg" alt="Trulli" width="500" height="333" ><p>The frame is made of wood and it is used to hold all the components in a nice way.</p>
+    
+</ul>  
+
+
+        <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+    <h4><b><i>>Design Description</i></b></h1>
+
+<div class="row">
+  <div class="column">
+    <img src="dd.PNG" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="ll.PNG" alt="Forest" style="width:200%">
+  </div>
+</div>
+</body>
+    <h3><b><i>>Video Demo:</i></b></h3>
+<video width="100%" height="550" controls play>
+<source src="My Movie.mp4" type="video/mp4">
+</video>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src ="js/owl.carousel.js"> </script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('id012');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<p>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8094568153074!2d35.482301215206164!3d33.71387908069938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ee2753a9902c9%3A0x3caa6fd59e81792!2sRafik%20Hariri%20University%20RHU!5e0!3m2!1sen!2slb!4v1584199032832!5m2!1sen!2slb" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+</p>
+
+<!--Google Maps-->
+<footer id ="footer" > 
+<div class ="footer-top">
+<div class ="container">
+<div class ="row">
+<div class ="col-lg-3 col-md-6 footer-info">
+<h1> Smart-Mirror </h1>
+</div> 
+
+<div class ="col-lg-3 col-md-6 ">
+<h4> Stay Connected </h4>
+	<a href="https://twitter.com/?lang=en" > <img src="http://svgshare.com/i/Bsi.svg"  style="width: 32px;"></a>
+	<a href="https://www.facebook.com/" > <img src="http://svgshare.com/i/BrE.svg" style="width: 32px;"></a>
+	<a href="https://www.instagram.com/" > <img src="http://svgshare.com/i/Bt1.svg"  style="width: 32px;"> </a>
+    <a href ="https://www.whatsapp.com/" ><img src="http://svgshare.com/i/Brz.svg"  style="width: 32px;"></li></a>
+
+</div>
+
+</footer>  
+
+
+</body>
+
+
+</html>
